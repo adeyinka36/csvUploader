@@ -29,9 +29,12 @@ class ImportHomeOwnersData extends Command
      */
     public function handle()
     {
+//        retrieve the file name from the command line
         $file = $this->argument('file');
+//        read the file into an array
         $data = array_map('str_getcsv', file($file));
 
+//        flatten the array
         $data = array_merge(...$data);
 
         try {

@@ -27,6 +27,7 @@ export default {
         handleFileUpload(event) {
             this.selectedFile = event.target.files[0];
         },
+        //submit file to backend and have it processed
         async onSubmit() {
             if (!this.selectedFile) return;
             const formData = new FormData();

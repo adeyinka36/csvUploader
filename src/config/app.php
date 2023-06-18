@@ -185,4 +185,21 @@ return [
         // 'NameParserTest' => App\Facades\NameParserTest::class,
     ])->toArray(),
 
+    'titles' => [
+        'Mr',
+        'Mrs',
+        'Miss',
+        'Ms',
+        'Dr',
+        'Prof',
+        'Mister',
+        'Sir',
+        'Madam',
+        'Master',
+        'Madame',
+        'Rev',
+    ],
+
+    'separators' => ['and', '&']
+
 ];

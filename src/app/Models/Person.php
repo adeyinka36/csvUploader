@@ -17,4 +17,5 @@ class Person extends Model
         'initial',
         'last_name',
     ];
+
 }
