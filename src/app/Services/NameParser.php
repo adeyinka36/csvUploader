@@ -109,7 +109,7 @@ class NameParser{
         switch (count($person1details)){
             case 1:
                 $person1['first_name'] = null;
-                $person1['last_name'] = end($person1details);
+                $person1['last_name'] = end($person2details);
                 break;
             case 2:
                 $person1['last_name'] = end($person1details);

@@ -87,7 +87,7 @@ class PersonController extends Controller
             $file = $request->file('file');
             Storage::disk('local')->put('uploads'.'/upload.csv', file_get_contents($file));
 
-//            this could be done as a job but i run it synchronously her so that immediate update on its success or failure can be provided to the frontend user
+//            this could be done as a job but i run it synchronously here so that immediate update on its success or failure can be provided to the frontend user
             Artisan::call('import:homeowners', ['file' => $file]);
 
             return response()->json(['message' => 'File uploaded successfully']);
