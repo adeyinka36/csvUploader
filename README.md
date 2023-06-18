@@ -1,6 +1,6 @@
-<h1>Hayden's Garage Booking System</h1>
+<h1>CSV file uploader</h1>
 
-<p>Welcome to Hayden's Garage Booking System! This document will guide you through the steps needed to get the project up and running.</p>
+<p>This application allows users to extract persons from CSV file and store them in the Database. The can be done using the Laravel command or by uploading the file in the frontend</p>
 
 <h2>Getting Started</h2>
 
